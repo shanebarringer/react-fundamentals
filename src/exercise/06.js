@@ -10,7 +10,7 @@ function UsernameForm({onSubmitUsername}) {
 
   const handleChange = event => {
     const value = event.target.value
-    const isValid = value === setUsername(value.toLowerCase())
+    setUsername(value.toLowerCase())
   }
 
   const handleSubmit = event => {
